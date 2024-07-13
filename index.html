@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="assets/vector.png" alt="AluraGeek">
+            <h1 >AluraGeek</h1>
+        </div>
+    </header>
+    <main class="main-container">
+        <section class="products">
+            <h2>Mis productos:</h2>
+            <div data-product class="product-grid">
+                <!-- Productos aquí -->
+            </div>
+        </section>
+        <section class="add-product">
+            <h2>Agregar Producto:</h2>
+            <form data-product-form id="add-product-form">
+                <input data-name type="text" id="product-name" placeholder="nombre...">
+                <input data-price type="text" id="product-price" placeholder="precio...">
+                <input data-image type="text" id="product-image" placeholder="imagen...">
+                <button submit type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Ernesto Faerron Chavarría</p>
+        <p>ALURA LATAM - 2024</p>
+    </footer>
+    <script type="module" src="js/controllers/main.js"></script>
+</body>
+</html>
